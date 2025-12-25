@@ -1,0 +1,106 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+classifiers = [
+  "Natural Language :: English",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.11",
+]
+name = "AI_Project"
+description = "Projet IA/ML collaboratif avec TensorFlow, pandas et autres bibliothèques"
+dynamic = ["version"]
+readme = "README.md"
+requires-python = ">=3.11.0"
+authors = [
+  { name = "Tom Rousseau", email = "tom.charles.rousseau@gmail.com"},
+  { name = "Bastien Rousseau", email = "bastien.rousseaub@gmail.com" },
+]
+maintainers = [
+  { name = "Tom Rousseau", email = "tom.charles.rousseau@gmail.com" },
+  { name = "Bastien Rousseau", email = "bastien.rousseaub@gmail.com" },
+]
+license = { file = "LICENSE" }
+dependencies = [
+  "pandas>=2.1",
+  "tensorflow>=2.14",
+  "numpy>=1.26",
+  "scikit-learn>=1.3",
+  "matplotlib>=3.8",
+  "seaborn>=1.3",
+  "jupyter>=1.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/bastienrousseau/Segmentation-AI-project"
+
+[project.optional-dependencies]
+dev = [
+  "black>=24.9",
+  "isort>=6.1",
+  "pytest>=8.2",
+  "mypy>=1.5",
+  "ruff>=0.0.300"
+]
+tuto = [
+  "notebook>=7.0",
+  "ipython>=8.15"
+]
+
+[tool.ruff]
+# Include project code folder
+include = ["AI_Project"]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "dependencies",
+]
+line-length = 88
+indent-width = 4
+
+[tool.ruff.lint]
+select = [
+    "E", # pycodestyle
+    "PL", # pylint
+    "F", # Pyflakes
+    "UP", # pyupgrade
+    "I", # isort
+]
+ignore = []
+fixable = ["ALL"]
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.mypy]
+strict = false
+ignore_missing_imports = true
+follow_imports = "silent"
+no_strict_optional = true
+disable_error_code = "import, annotation-unchecked"
