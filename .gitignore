@@ -1,0 +1,18 @@
+# Environnement virtuel
+venv/
+
+# Fichiers Python compilés
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Setuptools / egg-info
+*.egg-info/
+AI_Project.egg-info/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Fichiers temporaires / logs
+*.log
