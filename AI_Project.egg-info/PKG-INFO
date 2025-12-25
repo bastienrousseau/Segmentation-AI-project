@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: AI_Project
+Version: 0.0.0
+Summary: Projet IA/ML collaboratif avec TensorFlow, pandas et autres bibliothèques
+Author-email: Tom Rousseau <tom.charles.rousseau@gmail.com>, Bastien Rousseau <bastien.rousseaub@gmail.com>
+Maintainer-email: Tom Rousseau <tom.charles.rousseau@gmail.com>, Bastien Rousseau <bastien.rousseaub@gmail.com>
+Project-URL: Homepage, https://github.com/bastienrousseau/Segmentation-AI-project
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11.0
+Description-Content-Type: text/markdown
+Requires-Dist: pandas>=2.1
+Requires-Dist: tensorflow>=2.14
+Requires-Dist: numpy>=1.26
+Requires-Dist: scikit-learn>=1.3
+Requires-Dist: matplotlib>=3.8
+Requires-Dist: seaborn>=0.13
+Requires-Dist: jupyter>=1.0
+Provides-Extra: dev
+Requires-Dist: black>=24.9; extra == "dev"
+Requires-Dist: isort>=6.1; extra == "dev"
+Requires-Dist: pytest>=8.2; extra == "dev"
+Requires-Dist: mypy>=1.5; extra == "dev"
+Requires-Dist: ruff>=0.0.300; extra == "dev"
+Provides-Extra: tuto
+Requires-Dist: notebook>=7.0; extra == "tuto"
+Requires-Dist: ipython>=8.15; extra == "tuto"
+
+"# Segmentation-AI-project" 
+"# Segmentation-AI-project" 
