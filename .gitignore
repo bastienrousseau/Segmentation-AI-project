@@ -1,11 +1,14 @@
-# Environnement virtuel
+# Virtual environment 
 venv/
 
-# Fichiers Python compilés
+# Files Python compiled
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Example image
+*.png
 
 # Setuptools / egg-info
 *.egg-info/
@@ -14,5 +17,5 @@ AI_Project.egg-info/
 # Jupyter checkpoints
 .ipynb_checkpoints/
 
-# Fichiers temporaires / logs
+# Temp files / logs
 *.log
