@@ -1,3 +1,4 @@
+.gitignore
 AI.ipynb
 README.md
 pyproject.toml
